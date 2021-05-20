@@ -1,0 +1,444 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html, body {
+	height: 100%; 
+}
+
+input {
+	border: 0;
+}
+
+
+/**Boot CSS**/
+ 
+img {
+	width: 100%;
+	max-width: 350px;
+}
+
+.center {
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.w33 {
+	width: 33.3%;
+}
+
+.w50 {
+	width: 50%;
+	padding: 0 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/**Estilização**/
+
+header{
+	padding: 20px 0;
+	background: #3D437A;
+}
+
+.mobile {
+	display: none;
+}
+
+
+/**Estilização-navBar-desktop**/
+nav.desktop ul {
+	list-style-type: none;
+}
+
+nav.desktop li {
+	font-weight: 300;
+	font-size: 15px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+nav.desktop li:hover {
+	text-decoration: underline;
+}
+
+nav.desktop a {
+	color: white;
+	text-decoration: none;
+}
+
+/**Estilização-section-banner-principal-desktop**/
+
+section.banner-principal {
+	width: 100%;
+	height: 600px;
+	background-image: url('../imgs/background-project.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+div.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(61, 67, 122,0.5);
+	z-index: 1;
+}
+
+section.banner-principal form{
+	width: 93%;
+	max-width: 600px;
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+}
+
+section.banner-principal form h2 {
+	color: white;
+	font-weight: 200;
+	font-size: 30px;
+	text-align: center;
+}
+
+section.banner-principal form input[type=email] {
+	width: 100%;
+	height: 66px;
+	background-color: white;
+	font-size: 22px;
+	border-radius: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+	border:0;
+}
+
+section.banner-principal form input[type=submit] {
+	width: 100%;
+	height: 66px;
+	background-color: rgb(0, 158, 42);
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+	margin-top: 7px;
+	border-radius: 5px;
+	cursor: pointer;
+	border:0;
+	transition: 0.2s;
+	text-transform: uppercase;
+}
+
+section.banner-principal form input[type=submit]:hover {
+	background-color: rgb(0, 140, 37);
+}
+
+
+section.descricao-autor {
+	padding: 40px 0; 
+}
+
+section.descricao-autor h2 {
+	font-size: 35px;
+	font-weight: 400;
+	color: #444;
+}
+
+section.descricao-autor p {
+	font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+section.especialidades {
+	padding: 40px 0;
+	background-color: #f7f7f7;
+}
+
+section.especialidades h2.title {
+    font-size: 29px;
+    font-weight: 400;
+    text-align: center;
+    color: #999;
+    position: relative;
+    bottom: 25px;
+}
+
+.box-especialidade {
+	margin: 20px 0;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.box-especialidade h3{
+	color: #3D437A;
+	font-size: 40px;
+}
+
+.box-especialidade h4{
+	font-weight: 300;
+	color: #3D437A;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.box-especialidade p {
+	text-align: justify;
+	font-size: 15px;
+	color: #444;
+}
+
+section.extras {
+	background-color: #3D437A;
+}
+
+.servicos-container, .depoimentos-container {
+	padding: 0 50px;
+}
+
+section.extras .title {
+	font-size: 30px;
+	margin-bottom: 15px; 
+	font-weight: 300;
+	color: white;
+	position: relative;
+	top: 10px;
+}
+
+.depoimentos-single {
+	padding: 15px 0;
+	border-bottom: 1px solid #5056A0;
+	font-weight: 300;
+	color: white;
+	text-align: justify;
+}
+
+p.depoimentos-descricao {
+	font-size: 15px;
+	font-weight: 300;
+	color: white;
+}
+
+p.nome-autor {
+	font-size: 15px;
+	font-weight: 300;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px; 
+}
+
+.servicos ul {
+	margin: 20px 0;
+
+}
+
+.servicos li {
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+	text-align: justify;
+}
+
+footer {
+	background-color: #2d3057;
+	color: white;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+footer p {
+	text-align: center;
+	padding: 15px 0;
+}
+
+.fixed {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/**
+	ERROR
+**/
+
+section.error404{
+	text-align: center;
+	padding: 30px 0;
+}
+
+ section.error404 img {
+	margin-top: 20px;
+	max-width: 70%;
+	max-height: 700px;
+	width: 100%;
+}
+
+section.error404 p {
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+section.error404 a {
+	text-decoration: none;
+}
+
+
+
+
+/**
+	MAP
+**/
+
+#map {
+	width: 100%;
+	height: 400px;
+}
+
+
+/**
+	Contato-container
+**/
+
+.contato-container{
+	text-align: center;
+	padding: 40px 0;
+}
+
+.contato-container input[type="text"] {
+	margin: 8px 0;
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+
+	max-width: 750px;
+}
+
+.contato-container textarea {
+	margin: 8px 0;
+	width: 100%;
+	height: 120px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+
+	max-width: 750px;
+}
+
+.contato-container input[type=submit] {
+    width: 100%;
+    height: 66px;
+    background-color: rgb(0, 158, 42);
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    margin-top: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 0;
+    transition: 0.2s;
+    text-transform: uppercase;
+    max-width: 750px;
+}
+
+.contato-container input[type=submit]:hover {
+	background-color: rgb(0, 140, 37);
+}
+
+
+
+
+/**
+	responsivo
+**/
+
+@media screen and (max-width: 700px) {
+	nav.desktop{
+		display: none;
+	}
+
+	nav.mobile{
+		display: block;
+	}
+
+	.botao-menu-mobile {
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+	}
+
+	nav.mobile ul{
+		overflow: auto;
+		top: 55px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		text-align: center;
+		background-color: #3D437A;
+		width: 100%;
+		padding: 8px 0;
+		display: none;
+	}
+
+	nav.mobile li {
+		font-weight: 300;
+		display: block;
+		width: 100%;
+		font-size: 17px;
+		padding: 8px 0;
+		border-bottom: 1px solid #2d3057;
+	}
+
+	nav.mobile li a{
+		color: white;
+		text-decoration: none;
+		display: block;
+		text-transform: uppercase;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	img {
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		max-width: 400px;
+	}
+
+	.w50 {
+		padding: 20px;
+		width: 100%;
+	}
+
+	.w33 {
+		width: 100%;
+	}
+}
+
